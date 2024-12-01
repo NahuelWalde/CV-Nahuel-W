@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 /* Fonts and fonts styles */
@@ -35,17 +36,17 @@
 /* VARIABLES */
 /* Font family */
 /* Font weight */
-/* Link background colors */
+/* Background colors */
 /* Body grid */
 .body-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(25, auto);
+  grid-template-rows: repeat(4, auto);
   gap: 5%;
 }
 .body-grid .header-container {
   grid-column: 1/13;
-  grid-row: 1/5;
+  grid-row: 1/2;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(4, auto);
@@ -62,6 +63,9 @@
   grid-column: 8/13;
   grid-row: 4/5;
   margin-top: 10%;
+}
+.body-grid .header-container .header-links .link-style {
+  padding: 5%;
 }
 .body-grid .header-container .header-contact {
   grid-column: 1/7;
@@ -80,20 +84,48 @@
   margin-top: 6%;
 }
 .body-grid .jobs {
-  grid-column: 1/13;
-  grid-row: 6/10;
+  grid-column: 1/6;
+  grid-row: 2/3;
+  margin-left: 20%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+.body-grid .jobs h3 {
+  margin-bottom: 5%;
 }
 .body-grid .education {
-  grid-column: 1/13;
-  grid-row: 11/15;
+  grid-column: 7/13;
+  grid-row: 2/3;
+  margin-right: 20%;
+  padding-right: 5%;
+  padding-top: 4%;
+  padding-left: 5%;
+}
+.body-grid .education .education-margin {
+  margin-bottom: 5%;
 }
 .body-grid .skills {
   grid-column: 1/13;
-  grid-row: 16/20;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 5%;
+}
+.body-grid .skills .technical {
+  margin-bottom: 10%;
+}
+.body-grid .skills .soft {
+  margin-bottom: 15%;
+  margin-right: 5%;
 }
 .body-grid .portfolio {
-  grid-column: 1/13;
-  grid-row: 21/25;
+  grid-column: 1/4;
+  grid-row: 4/5;
+  overflow: hidden;
 }
 
 /* Background styles */
@@ -124,31 +156,37 @@
 
 /* Page style */
 /* Body's fonts style */
-.body-fonts {
+.body-style {
   color: #fff;
   font-family: "Poppins Regular", sans-serif;
   font-weight: 400;
   /* Header background color*/
 }
-.body-fonts .header-container {
+.body-style .header-container {
   background-color: rgba(0, 0, 0, 0.75);
 }
-.body-fonts .header-container .header-links {
+.body-style .header-container .header-links > .link-style {
   /* Links styles */
-}
-.body-fonts .header-container .header-links .link-style {
   display: inline-block;
   text-decoration: none;
   color: #fff;
   background-color: #20214f;
-  padding: 5%;
   border-radius: 50px;
   margin-right: 10%;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
-.body-fonts .header-container .header-links .link-style:hover {
+.body-style .header-container .header-links > .link-style:hover {
   background-color: #0056b3;
   transform: scale(1.1);
+}
+.body-style .jobs {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.body-style .education {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.body-style .skills {
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 /*# sourceMappingURL=styles.css.map */

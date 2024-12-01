@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 /* Fonts and fonts styles */
@@ -47,18 +48,19 @@ $font-weight-regular: 400;
 $font-weight-bold: 700;
 $font-weight-medium: 500;
 
-/* Link background colors */
-$link-bg-color: #20214f;
+/* Background colors */
+$details-color: #20214f;
+$transparent-bg-color: rgba(0, 0, 0, 0.75);
 
 /* Body grid */
 .body-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(25, auto);
+    grid-template-rows: repeat(4, auto);
     gap: 5%;
     .header-container {
         grid-column: 1 / 13;
-        grid-row: 1 / 5;
+        grid-row: 1 / 2;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(4, auto);
@@ -74,6 +76,9 @@ $link-bg-color: #20214f;
             grid-column: 8 / 13;
             grid-row: 4 / 5;
             margin-top: 10%;
+            .link-style {
+                padding: 5%;
+            }
         }
         .header-contact {
             grid-column: 1 / 7;
@@ -93,20 +98,48 @@ $link-bg-color: #20214f;
         }
     }
     .jobs {
-        grid-column: 1 / 13;
-        grid-row: 6 / 10;
+        grid-column: 1 / 6;
+        grid-row: 2 / 3;
+        margin-left: 20%;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        h3 {
+            margin-bottom: 5%;
+        }
     }
     .education {
-        grid-column: 1 / 13;
-        grid-row: 11 / 15;
+        grid-column: 7 / 13;
+        grid-row: 2 / 3;
+        margin-right: 20%;
+        padding-right: 5%;
+        padding-top: 4%;
+        padding-left: 5%;
+        .education-margin {
+            margin-bottom: 5%;
+        }
     }
     .skills {
         grid-column: 1 / 13;
-        grid-row: 16 / 20;
+        grid-row: 3 / 4;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 5%;
+        .technical {
+            margin-bottom: 10%;
+        }
+        .soft {
+            margin-bottom: 15%;
+            margin-right: 5%;
+        }
     }
     .portfolio {
-        grid-column: 1 / 13;
-        grid-row: 21 / 25;
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+        overflow: hidden;
     }
 }
 
@@ -138,21 +171,19 @@ $link-bg-color: #20214f;
 
 /* Page style */
 /* Body's fonts style */
-.body-fonts {
+.body-style {
     color: #fff;
     font-family: $font-primary;
     font-weight: $font-weight-regular;
     /* Header background color*/
     .header-container {
-        background-color: rgba(0, 0, 0, 0.75);
-        .header-links {
-            /* Links styles */
-            .link-style {
+        background-color: $transparent-bg-color;
+        .header-links > .link-style {
+                /* Links styles */
                 display: inline-block;
                 text-decoration: none;
                 color: #fff;
-                background-color: $link-bg-color;
-                padding: 5%;
+                background-color: $details-color;
                 border-radius: 50px;
                 margin-right: 10%;
                 transition: transform 0.3s ease, background-color 0.3s ease;
@@ -160,7 +191,15 @@ $link-bg-color: #20214f;
                     background-color: #0056b3;
                     transform: scale(1.1);
                 }
-            }
         }
+    }
+    .jobs {
+        background-color: $transparent-bg-color;
+    }
+    .education {
+        background-color: $transparent-bg-color;
+    }
+    .skills {
+        background-color: $transparent-bg-color;
     }
 }
