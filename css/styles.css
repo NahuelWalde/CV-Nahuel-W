@@ -122,14 +122,19 @@
   z-index: -1;
 }
 
+/* Page style */
 /* Body's fonts style */
 .body-fonts {
   color: #fff;
   font-family: "Poppins Regular", sans-serif;
   font-weight: 400;
+  /* Header background color*/
 }
 .body-fonts .header-container {
   background-color: rgba(0, 0, 0, 0.75);
+}
+.body-fonts .header-container .header-links {
+  /* Links styles */
 }
 .body-fonts .header-container .header-links .link-style {
   display: inline-block;

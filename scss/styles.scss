@@ -136,14 +136,17 @@ $link-bg-color: #20214f;
     z-index: -1;
 }
 
+/* Page style */
 /* Body's fonts style */
 .body-fonts {
     color: #fff;
     font-family: $font-primary;
     font-weight: $font-weight-regular;
+    /* Header background color*/
     .header-container {
         background-color: rgba(0, 0, 0, 0.75);
         .header-links {
+            /* Links styles */
             .link-style {
                 display: inline-block;
                 text-decoration: none;
