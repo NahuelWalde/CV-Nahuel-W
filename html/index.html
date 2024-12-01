@@ -11,25 +11,27 @@
     <title>CV Nahuel Walde</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body class="body-bg body-fonts">
+<body class="body-grid body-bg body-fonts">
     <!-- Header section: Contains personal information such as the name, title, link to the portfolio, contact and GitHub -->
-    <header>
-        <h1>Nahuel Ezequiel Walde Dominguez</h1>
-        <h2>Estudiante de Licenciatura en Sistemas</h2>
+    <header class="header-container">
+        <div class="header-titles">
+            <h1>Nahuel Ezequiel Walde Dominguez</h1>
+            <h2>Estudiante de Licenciatura en Sistemas</h2>
+        </div>
         <!-- Link to the portfolio or to download the CV -->
-        <div>
+        <div class="header-links">
             <a class="link-style" href="">Ir al Portafolio</a>
-            <a class="link-style" href="../assets/CV-NahuelWalde.pdf" download>Descargar CV</a>
+            <a class="link-style" href="../assets/CV-NahuelWalde.pdf" download target="_blank">Descargar CV</a>
         </div>
         <!-- Links to WhatsApp, Email, LinkedIn Profile and GitHub -->
-        <div>
-            <a href="https://wa.me/5491135971110"><img src="../icons/whatsapp-icon-48x48.png" alt="WHATSAPP"></a>
-            <a href="mailto:waldenahuel@gmail.com"><img src="../icons/gmail-icon-48x48.png" alt="E-MAIL"></a>
-            <a href="https://www.linkedin.com/in/nahuel-ezequiel-walde-dominguez"><img src="../icons/linkedin-icon-48x48.png" alt="LINKEDIN"></a>
-            <a href="https://github.com/NahuelWalde"><img src="../icons/github-icon-48x48.png" alt="GITHUB"></a>
+        <div class="header-contact">
+            <a class="contact-a" href="https://wa.me/5491135971110"><img src="../icons/whatsapp-icon-48x48.png" alt="WHATSAPP"></a>
+            <a class="contact-a" href="mailto:waldenahuel@gmail.com"><img src="../icons/gmail-icon-48x48.png" alt="E-MAIL"></a>
+            <a class="contact-a" href="https://www.linkedin.com/in/nahuel-ezequiel-walde-dominguez"><img src="../icons/linkedin-icon-48x48.png" alt="LINKEDIN"></a>
+            <a class="contact-a" href="https://github.com/NahuelWalde"><img src="../icons/github-icon-48x48.png" alt="GITHUB"></a>
         </div>
         <!-- Goals section: Describes my main goal -->
-        <div>
+        <div class="header-goals">
             <h2>Objetivo profesional</h2>
             <p>
                 Busco formar parte de un equipo de trabajo dinámico y colaborativo, donde pueda aplicar mis habilidades en el área de sistemas. 
@@ -38,7 +40,7 @@
         </div>
     </header>
     <!-- Experience section: Lists my previous jobs and describes my responsabilities -->
-    <section>
+    <section class="jobs">
         <h2>Experiencia Laboral</h2>
         <article>
             <h3>Soporte Técnico | Lavadero Industrial Banfield</h3>
@@ -70,7 +72,7 @@
         </article>
     </section>
     <!-- Education section: Includes formal academic education and additional courses or certifications -->
-    <section>
+    <section class="education">
         <!-- Academic: Includes college and technical high school -->
         <h2>Formación Académica</h2>
         <article>
@@ -140,7 +142,7 @@
         </article>
     </section>
     <!-- Skills and knowledge section: This section showcases my technical skills, software tools, methodologies and personal skills (soft skills)-->
-    <section>
+    <section class="skills">
         <h2>Habilidades técnicas</h2>
         <ul>
             <li><strong>Lenguajes: </strong>HTML, CSS, JavaScript, C</li>
@@ -160,7 +162,7 @@
         </ul>
     </section>
     <!-- Portfolio section: This section includes all the freelance projects -->
-    <section>
+    <section class="portfolio">
         <article>
             <h3>Sitio web para psicóloga</h3>
             <p>
